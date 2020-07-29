@@ -1,0 +1,40 @@
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(space-evenly, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.projects {
+  h2 {
+    font-size: x-large;
+    padding: 3rem;
+    background: linear-gradient(to left, #38d39f, #38a4d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  div {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    img {
+      width: 350px;
+      object-fit: contain;
+      transition: all 0.3s ease-in;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}
